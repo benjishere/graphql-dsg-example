@@ -12,7 +12,6 @@ type Item {
     id: ID!
     name: String!
     desc: String!
-    createdAt: DateTime
 }
 
 scalar DateTime
