@@ -1,10 +1,10 @@
 type Query {
-    orders(orderId: String) : [Order]
+    orders(orderId: Int) : [Order]
 }
 
 type Order {
     id: ID!
-    items: [Item!]!
+    item: Item!
     createdAt: String!
 }
 
@@ -14,4 +14,4 @@ type Item {
     desc: String!
 }
 
-scalar DateTime
+
