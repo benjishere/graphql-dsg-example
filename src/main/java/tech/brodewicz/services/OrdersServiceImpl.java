@@ -1,10 +1,12 @@
 package tech.brodewicz.services;
 
+import org.springframework.stereotype.Service;
 import tech.brodewicz.types.Item;
 import tech.brodewicz.types.Order;
 
 import java.util.List;
 
+@Service
 public class OrdersServiceImpl implements  OrdersService{
     @Override
     public List<Order> orders() {

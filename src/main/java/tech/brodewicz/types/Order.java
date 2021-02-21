@@ -1,7 +1,5 @@
 package tech.brodewicz.types;
 
-import java.util.List;
-
 public class Order {
 
     private final Integer id;
