@@ -4,10 +4,9 @@ import java.util.List;
 
 public class Order {
 
-    private final Integer id;
+    private Integer id;
     private List<Item> items;
-    private final String createdAt;
-    private Integer totalPrice;
+    private String createdAt;
 
     public Order(Integer id, String createdAt) {
         this.id = id;
@@ -26,7 +25,4 @@ public class Order {
         return createdAt;
     }
 
-    public Integer getTotalPrice() {
-        return totalPrice;
-    }
 }

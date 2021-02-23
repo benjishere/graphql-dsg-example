@@ -6,7 +6,7 @@ import tech.brodewicz.types.Order;
 import java.util.List;
 
 @Service
-public class OrdersServiceImpl implements  OrdersService{
+public class OrdersServiceImpl implements  OrdersService {
     @Override
     public List<Order> orders() {
         return List.of(

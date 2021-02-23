@@ -16,7 +16,7 @@ public class DgsConstants {
 
         public static final String Id = "id";
 
-        public static final String Item = "item";
+        public static final String Items = "items";
 
         public static final String CreatedAt = "createdAt";
     }
@@ -26,7 +26,7 @@ public class DgsConstants {
 
         public static final String Name = "name";
 
-        public static final String Desc = "desc";
+        public static final String Type = "type";
 
         public static final String Price = "price";
     }
