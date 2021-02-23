@@ -1,16 +1,18 @@
 package tech.brodewicz.types;
 
+import tech.brodewicz.types.DgsConstants.TYPE;
+
 public class Item {
 
     private final Integer id;
     private final String name;
-    private final String desc;
+    private final TYPE type;
     private final Integer price;
 
-    public Item(Integer id, String name, String desc, Integer price) {
+    public Item(Integer id, String name, TYPE type, Integer price) {
         this.id = id;
         this.name = name;
-        this.desc = desc;
+        this.type = type;
         this.price = price;
     }
 
@@ -22,11 +24,11 @@ public class Item {
         return name;
     }
 
-    public String getDesc() {
-        return desc;
-    }
-
     public Integer getPrice() {
         return price;
+    }
+
+    public TYPE getType() {
+        return type;
     }
 }

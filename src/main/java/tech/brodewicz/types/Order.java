@@ -1,14 +1,16 @@
 package tech.brodewicz.types;
 
+import java.util.List;
+
 public class Order {
 
     private final Integer id;
-    private final Item item;
+    private List<Item> items;
     private final String createdAt;
+    private Integer totalPrice;
 
-    public Order(Integer id, Item item, String createdAt) {
+    public Order(Integer id, String createdAt) {
         this.id = id;
-        this.item = item;
         this.createdAt = createdAt;
     }
 
@@ -16,11 +18,15 @@ public class Order {
         return id;
     }
 
-    public Item getItem() {
-        return item;
+    public List<Item> getItem() {
+        return items;
     }
 
     public String getCreatedAt() {
         return createdAt;
+    }
+
+    public Integer getTotalPrice() {
+        return totalPrice;
     }
 }

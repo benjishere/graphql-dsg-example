@@ -30,4 +30,11 @@ public class DgsConstants {
 
         public static final String Price = "price";
     }
+
+    public enum TYPE {
+        COMPACT,
+        CROSSOVER,
+        SUV,
+        PICK_UP
+    }
 }

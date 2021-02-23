@@ -4,14 +4,22 @@ type Query {
 
 type Order {
     id: ID!
-    item: Item!
+    items: [Item!]!
+    totalPrice: Int!
     createdAt: String!
 }
 
 type Item {
     id: ID!
     name: String!
-    desc: String!
+    type: Type!
+    price: Int!
 }
 
+enum Type {
+    COMPACT,
+    CROSSOVER,
+    SUV,
+    PICK_UP
+}
 
